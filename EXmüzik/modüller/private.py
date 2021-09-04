@@ -118,7 +118,7 @@ def map(pos):
             [InlineKeyboardButton(text = 'ɴᴇxᴛ »', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = f"https://t.me/sohbetdestek"
+        url = f"https://t.me/kizilsancakbilgi"
         button = [
             [InlineKeyboardButton("➕ Beni grubunuza ekleyin ➕", url=f"https://t.me/HatiralaraMusicBot?startgroup=true")],
             [InlineKeyboardButton(text = '📣 Resmi kanal', url=f"https://t.me/kizilsancakbilgi"),
