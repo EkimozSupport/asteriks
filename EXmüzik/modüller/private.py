@@ -56,7 +56,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋 **Merhaba** {message.from_user.first_name}**\n
-⚡ **[Talia Music](https://t.me/Efsanestar_bot) Müzik, yeni Telegram'ın Sesli Sohbetleri aracılığıyla gruplarda müzik çalmanıza olanak sağlar!**
+⚡ **[Hatıralar Music](https://t.me/Sancakailesi) Müzik, yeni Telegram'ın Sesli Sohbetleri aracılığıyla gruplarda müzik çalmanıza olanak sağlar!**
 
 💡 **Botun tüm komutlarını ve nasıl çalıştıklarını öğrenin.» 📚 Komutlar düğmesi.**
 
@@ -67,21 +67,21 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Beni grubunuza ekleyin ➕", url=f"https://t.me/Efsanestar_bot?startgroup=true")],
+                        "➕ Beni grubunuza ekleyin ➕", url=f"https://t.me/HatiralaraMusicBot?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📣 Resmi group", url=f"https://t.me/Sohbetskyfall"), 
+                        "📣 Resmi group", url=f"https://t.me/SancakAilesi"), 
                     InlineKeyboardButton(
-                        "👥 Destek Grubu", url=f"https://t.me/Sohbetdestek")
+                        "👥 Destek Grubu", url=f"https://t.me/MangoDestek")
                 ],[
                     InlineKeyboardButton(
-                        "⚡ Oluşturan", url=f"https://t.me/Mahoaga")
+                        "⚡ Oluşturan", url=f"https://t.me/kizilsancakailesi")
                 ],[
                     InlineKeyboardButton(
-                        "📚 Müzik group", url=f"https://t.me/taliasohbet")
+                        "📚 Müzik group", url=f"https://t.me/Smailesi")
                 ],[
                     InlineKeyboardButton(
-                        "🛠️ Kaynak kodu", url=f"https://t.me/Mahoaga")
+                        "🛠️ Kaynak kodu", url=f"https://t.me/kizilsancaksahibi")
                 ]
             ]
         ),
@@ -120,10 +120,10 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/sohbetdestek"
         button = [
-            [InlineKeyboardButton("➕ Beni grubunuza ekleyin ➕", url=f"https://t.me/Efsanestar_bot?startgroup=true")],
-            [InlineKeyboardButton(text = '📣 Resmi kanal', url=f"https://t.me/Sohbetdestek"),
-             InlineKeyboardButton(text = '👥 Support Group', url=f"https://t.me/Sohbetneresi")],
-            [InlineKeyboardButton(text = '🌻 Developer', url=f"https://t.me/Mahoaga")]
+            [InlineKeyboardButton("➕ Beni grubunuza ekleyin ➕", url=f"https://t.me/HatiralaraMusicBot?startgroup=true")],
+            [InlineKeyboardButton(text = '📣 Resmi kanal', url=f"https://t.me/kizilsancakbilgi"),
+             InlineKeyboardButton(text = '👥 Support Group', url=f"https://t.me/Sancakailesi")],
+            [InlineKeyboardButton(text = '🌻 Developer', url=f"https://t.me/kizilsancaksahibi")]
         ]
     else:
         button = [
@@ -170,7 +170,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "📚 Bot yapımı için", url="https://t.me/Mahoaga"
+                        "📚 Bot yapımı için", url="https://t.me/ucretlibotlar"
                     )
                 ]
             ]
@@ -189,10 +189,10 @@ async def reload(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/Taliasohbet"
+                        "sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/Sancakailesi"
                     ),
                     InlineKeyboardButton(
-                        "ᴄʀᴇᴀᴛᴇᴅ ʙʏ", url=f"https://t.me/Mahoaga"
+                        "ᴄʀᴇᴀᴛᴇᴅ ʙʏ", url=f"https://t.me/Kizilsancak"
                     )
                 ]
             ]
@@ -210,7 +210,7 @@ async def ping_pong(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["uptime", f"uptime@Efsanestar_bot"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"uptime@Hatiralaramusicbot"]) & ~filters.edited)
 @authorized_users_only
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
