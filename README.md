@@ -21,7 +21,7 @@
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmet5506/EX-Music)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EkimozSupport/asteriks)
 
 Get pyrogram (p)  `SESSION` from here:
 [![Run on Repl.it](https://repl.it/badge/github/vckyou/PyrogramString)](https://repl.it/@vckyou/PyrogramString?lite=1&outputonly=1)
