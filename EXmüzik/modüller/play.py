@@ -492,7 +492,7 @@ async def play(_, message: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>⛑ Flood Wait Error! ⛑\n{user.first_name} tidak dapat bergabung dengan grup Anda karena banyaknya permintaan bergabung untuk userbot! Pastikan pengguna tidak dibanned dalam grup."
-                        f"\n\nVeya @TaliaMusicasistant grubunuza el ile el ile ve yeniden deneyin</b>",
+                        f"\n\nVeya @HatiralaraMusicasistant grubunuza el ile el ile ve yeniden deneyin</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -948,7 +948,7 @@ async def deezer(client: Client, message_: Message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="📣 Official Channel", url="https://t.me/Sohbetdestek")],
+            [InlineKeyboardButton(text="📣 Official Channel", url="https://t.me/Mangodestek")],
         ]
     )
     file_path = await convert(wget.download(url))
